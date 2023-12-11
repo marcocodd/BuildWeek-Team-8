@@ -1,0 +1,30 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* General styles */
+
+
+#logo{
+    height: 35px;
+    width: 150px;
+}
+
+.pageBackground{
+    background-image: url(/assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+   
+}
+
+
+.title{
+    font-family: 'Inter', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.bold{
+    font-weight: 700;
+}
