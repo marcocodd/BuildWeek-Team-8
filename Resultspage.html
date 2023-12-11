@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results</title>
-    <link rel="stylesheet" href="./assets/css/Main.css" />
-    <link rel="stylesheet" href="./assets/css/Results.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results</title>
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/css/Main.css" />
+  <link rel="stylesheet" href="./assets/css/Results.css" />
+</head>
+
+<body class="pageBackground">
+  <header>
+    <img src="assets/img/epicode_logo.png" alt="Epidode logo" id="logo">
+  </header>
+  <main>
+    <div class="row">
+      <h1 class="title">Results</h1>
+      <p>The summry of your answers:</p>
+    </div>
+    <div class="row">
+      <div>
+        <h2>Correct</h2>
+        <p class="title"><span id="correctPerc">00</span>%</strong></p>
+        <p><span id="correctNumber">-</span>/<span class="totalQuestions">-</span></p>
+
+        <div>
+
+          <div class="circle">
+            <!-- To define better later  -->
+          </div>
+          <div class="circle-text">
+            <h3>Congratulations!</h3>
+            <h3 class="">You passed the exam.</h3>
+            <div>
+              We'll send you the certificate in few minutes.
+              Check your email (including
+              promotions / spam folder)
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Wrong</h2>
+          <p class="title"><span id="wrongPerc">00</span>%</strong></p>
+          <p><span id="wrongNumber">-</span>/<span class="totalQuestions">-</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button>RATE US</button>
+    </div>
+  </main>
+</body>
+
 </html>
