@@ -11,21 +11,23 @@
 </head>
 
 <body class="pageBackground">
+  <div class="main-wrapper">
   <header>
     <img src="assets/img/epicode_logo.png" alt="Epidode logo" id="logo">
   </header>
   <main>
-    <div class="row">
+    <div class='row flex-col title title-wrapper'>
       <h1 class="title">Results</h1>
       <p>The summry of your answers:</p>
     </div>
     <div class="row">
-      <div>
+      <div class="col-one-third">
         <h2>Correct</h2>
         <p class="title"><span id="correctPerc">00</span>%</strong></p>
         <p><span id="correctNumber">-</span>/<span class="totalQuestions">-</span></p>
+      </div>
 
-        <div>
+        <div class="col-one-third">
 
           <div class="circle">
             <!-- To define better later  -->
@@ -40,17 +42,17 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="col-one-third">
           <h2>Wrong</h2>
           <p class="title"><span id="wrongPerc">00</span>%</strong></p>
           <p><span id="wrongNumber">-</span>/<span class="totalQuestions">-</span></p>
         </div>
-      </div>
     </div>
-    <div class="row">
-      <button>RATE US</button>
+    <div class="row ">
+      <button class= 'LightButtonStyle'>RATE US</button>
     </div>
   </main>
+</div>
 </body>
 
 </html>
