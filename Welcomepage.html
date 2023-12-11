@@ -8,39 +8,41 @@
     <link rel="stylesheet" href="./assets/css/Welcome.css" />
   </head>
   <body>
-    <header>
-      <div><img src="assets/img/epicode_logo.png" alt="logo" /></div>
-    </header>
-    <main>
-      <div>
-        <h1>Welcome<br /><strong>to your exam</strong></h1>
-      </div>
-      <div>
-        <h3>Instructions</h3>
-        <p>
-          We don't expect most engineers to know the answers to all of these
-          questions, so don't worry if you're unsure of a few of them
-        </p>
-        <ul>
-          <li>
-            Each question is <strong>timed </strong> and can only be
-            <strong>answered once</strong>
-          </li>
-          <li>
-            Changing browser tab or opening other windows will
-            <strong> invalidate the question. </strong>
-          </li>
-          <li>This exam will take approx. <strong>0-5 min. </strong></li>
-        </ul>
-      </div>
-      <div class="raw">
+    <div class="main-wrapper">
+      <header>
+        <div ><img id="logo" src="assets/img/epicode_logo.png" alt="logo" /></div>
+      </header>
+      <main>
         <div>
-          <input type="checkbox" name="" id="accept" />
-          <label for="accept"></label> I promise to answer myself without help
-          from anyone
+          <h1 class="title">Welcome<br /><strong>to your exam</strong></h1>
         </div>
-        <div><button>PROCEED</button></div>
-      </div>
-    </main>
+        <div>
+          <h3>Instructions</h3>
+          <p>
+            We don't expect most engineers to know the answers to all of these
+            questions, so don't worry if you're unsure of a few of them
+          </p>
+          <ul>
+            <li>
+              Each question is <strong>timed </strong> and can only be
+              <strong>answered once</strong>
+            </li>
+            <li>
+              Changing browser tab or opening other windows will
+              <strong> invalidate the question. </strong>
+            </li>
+            <li>This exam will take approx. <strong>0-5 min. </strong></li>
+          </ul>
+        </div>
+        <div class="raw">
+          <div>
+            <input type="checkbox" name="" id="accept" />
+            <label for="accept"></label> I promise to answer myself without help
+            from anyone
+          </div>
+          <div><button>PROCEED</button></div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
