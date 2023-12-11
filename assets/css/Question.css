@@ -1,0 +1,71 @@
+body {
+    width: auto;
+    height: auto;
+}
+main {
+    text-align: center;
+}
+.btn {
+    background-color: rgba(255, 255, 255, 0.186);
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 65px;
+    margin-top: 15px;
+    margin-left: 30px;
+border-top: solid rgb(255, 255, 255);
+border-left: solid rgba(255, 255, 255, 0.186);
+border-right: solid rgba(255, 255, 255, 0.186);
+
+}
+.bottom {
+    margin-top: 100px;
+    color: white;
+}
+#logo {
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.title {
+    margin-top: 150px;
+}
+.circular-timer {
+    width: 85px; 
+    height: 85px; 
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+    margin-right: 100px;
+    border: 13px solid #ccc;
+  }
+  
+  .timer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px); 
+    position: absolute;
+  }
+  
+  .timer .inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #ff6a00; 
+    clip: rect(0px, 100px, 200px, 0px); 
+    position: absolute;
+  }
+  
+  .text {
+    text-align: center;
+    
+    line-height: 85px; 
+    font-size: 20px;
+    color: #333; 
+    top: 50%;
+left : 50%;
+transform: translate(-50%,-50%);
+
+  }
+  

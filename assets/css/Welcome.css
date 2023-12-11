@@ -8,6 +8,27 @@ body {
     background-position: center;
     background-size: 100%;
 }
+
 h3 {
-    
+ font-family: 'Inter', 'sans-serif'; 
+ color: #D20094;  
+ font-size: larger;
+
+}
+
+p{
+    font-family: 'Inter', 'sans-serif';
+    color: white;
+    max-width: 70%;
+    margin-bottom: 40px;
+
+}
+li {
+    font-family: 'Inter', 'sans-serif' ;
+    color: white;
+    margin-bottom: 10px;
+}
+#label {margin-top: 100px;
+    color: white;
+    font-family: 'Inter', 'sans-serif';
 }
