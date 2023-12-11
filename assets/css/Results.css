@@ -50,3 +50,21 @@ body {
   margin: 5px auto;
   box-shadow: none;
  }
+
+ .circle{
+  border: 20px solid #00ffff; 
+  border-radius: 50%;
+  border-top: 20px solid #d20094;
+  height: 180px;
+  padding: 30px 20px 0px 20px;
+  margin-bottom: 30px;
+  }
+
+  .purpleH3{
+    color: #00ffff;
+    margin-bottom: 20px;
+  }
+
+  .divCircleText{
+    font-size: 0.8rem;
+  }
