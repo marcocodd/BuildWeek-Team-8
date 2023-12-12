@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+    <link rel="stylesheet" href="./assets/css/Results.css" />
+    <link rel="stylesheet" href="./assets/css/CircleBarProgression.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Results</title>
-  <link rel="stylesheet" href="./assets/reset.css">
-  <link rel="stylesheet" href="./assets/css/Main.css" />
-  <link rel="stylesheet" href="./assets/css/Results.css" />
-</head>
-
-<body class="pageBackground">
-  <div class="main-wrapper">
-  <header>
-    <img src="assets/img/epicode_logo.png" alt="Epidode logo" id="logo">
-  </header>
-  <main>
-    <div class='row flex-col title title-wrapper'>
-      <h1 class="title">Results</h1>
-      <p>The summry of your answers:</p>
-    </div>
-    <div class="row">
-      <div class="col-one-third">
-        <h2>Correct</h2>
-        <p class="title"><span id="correctPerc">00</span>%</strong></p>
-        <p><span id="correctNumber">-</span>/<span class="totalQuestions">-</span></p>
-      </div>
-
-        <div class="circle">
-
-          <div>
-            <!-- To define better later  -->
+  <body class="pageBackground">
+    <div class="main-wrapper">
+      <header>
+        <img src="assets/img/epicode_logo.png" alt="Epidode logo" id="logo" />
+      </header>
+      <main>
+        <div class="row flex-col title title-wrapper">
+          <h1 class="title">Results</h1>
+          <p>The summry of your answers:</p>
+        </div>
+        <div class="row">
+          <div class="col-one-third">
+            <h2>Correct</h2>
+            <p class="title"><span id="correctPerc">00</span>%</p>
+            <p>
+              <span id="correctNumber">-</span>/<span class="totalQuestions"
+                >-</span
+              >
+            </p>
           </div>
-          <div class="circle-text">
-            <h3 class="bold">Congratulations!</h3>
-            <h3 class="purpleH3 bold">You passed the exam.</h3>
-            <div class="divCircleText">
-              We'll send you the certificate in few minutes.
-              Check your email (including
-              promotions / spam folder)
+          <div class="col-one-third">
+            <div class="c100 p90 blue">
+              <div class="bar"></div>
+              <div class="fill"></div>
+              <div class="circle-text">
+                <h3 class="bold">Congratulations!</h3>
+                <h3 class="purpleH3 bold">You passed the exam.</h3>
+                <span>
+                  We'll send you the certificate in few minutes. Check your
+                  email (including promotions / spam folder)
+                </span>
+              </div>
             </div>
           </div>
+          <div class="col-one-third">
+            <h2>Wrong</h2>
+            <p class="title"><span id="wrongPerc">00</span>%</p>
+            <p>
+              <span id="wrongNumber">-</span>/<span class="totalQuestions"
+                >-</span
+              >
+            </p>
+          </div>
         </div>
-        <div class="col-one-third">
-          <h2>Wrong</h2>
-          <p class="title"><span id="wrongPerc">00</span>%</strong></p>
-          <p><span id="wrongNumber">-</span>/<span class="totalQuestions">-</span></p>
+        <div class="row">
+          <button class="LightButtonStyle">
+            <a id="aStyle" href="./Feedbackpage.html">RATE US</a>
+          </button>
         </div>
+      </main>
     </div>
-    <div class="row ">
-      <button class= 'LightButtonStyle'>RATE US</button>
-    </div>
-  </main>
-</div>
-</body>
-
+  </body>
 </html>

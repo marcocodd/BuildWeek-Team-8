@@ -67,6 +67,10 @@ body {
     margin-bottom: 20px;
   }
 
-  .divCircleText{
+  .circle-text{
     font-size: 0.8rem;
   }
+
+#aStyle{
+  text-decoration: none;
+}
