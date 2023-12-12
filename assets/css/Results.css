@@ -16,9 +16,11 @@ body {
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .title-wrapper.title {
   font-weight: 700;
 }
+
 .title-wrapper p {
   font-size: 0.5em;
   font-weight: 400;
@@ -29,6 +31,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
 .row .col-one-third {
   width: 33.333%;
   text-align: center;
@@ -41,30 +44,30 @@ body {
           flex-direction: column;
 }
 
-/*# sourceMappingURL=Results.css.map */
 
-.LightButtonStyle{
+.LightButtonStyle {
   background: transparent;
   border: solid 2px white;
   color: white;
   margin: 5px auto;
-  box-shadow: none;
- }
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
- .circle{
-  border: 20px solid #00ffff; 
+.circle {
+  border: 20px solid #00ffff;
   border-radius: 50%;
   border-top: 20px solid #d20094;
   height: 180px;
   padding: 30px 20px 0px 20px;
   margin-bottom: 30px;
-  }
+}
 
-  .purpleH3{
-    color: #00ffff;
-    margin-bottom: 20px;
-  }
+.purpleH3 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}
 
-  .divCircleText{
-    font-size: 0.8rem;
-  }
+.divCircleText {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=Results.css.map */
