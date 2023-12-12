@@ -27,13 +27,13 @@
   
   .c100 {
     position: relative;
-    font-size: 160px;
+    font-size: 200px;
     width: 1em;
     height: 1em;
     border-radius: 50%;
     float: left;
     margin: 0.4em;
-    background: white;
+    background: transparent;
   }
   .c100 *, .c100 *:before, .c100 *:after {
     -moz-box-sizing: content-box;
@@ -48,7 +48,7 @@
     display: block;
     content: " ";
     border-radius: 50%;
-    background-color: red;
+    background-color:transparent;
     width: 0.82em;
     height: 0.82em;
     -moz-transition-property: all;

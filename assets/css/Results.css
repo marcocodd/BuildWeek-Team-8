@@ -69,6 +69,8 @@ body {
 
   .circle-text{
     font-size: 0.8rem;
+    width: 60%;
+    display: inline-block;
   }
 
 #aStyle{
