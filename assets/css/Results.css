@@ -1,78 +1,78 @@
 * {
-  color: #fff;
+	color: #fff;
 }
 
 body {
-  height: 100vh;
+	height: 100vh;
 }
 
 .main-wrapper {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding-top: 2rem;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding-top: 2rem;
 }
 
 .title-wrapper {
-  margin-bottom: 2rem;
-  text-align: center;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 .title-wrapper.title {
-  font-weight: 700;
+	font-weight: 700;
 }
 .title-wrapper p {
-  font-size: 0.5em;
-  font-weight: 400;
+	font-size: 0.5em;
+	font-weight: 400;
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 .row .col-one-third {
-  width: 33.333%;
-  text-align: center;
+	width: 33.333%;
+	text-align: center;
 }
 
 .flex-col {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 /*# sourceMappingURL=Results.css.map */
 
-.LightButtonStyle{
-  background: transparent;
-  border: solid 2px white;
-  color: white;
-  margin: 5px auto;
-  box-shadow: none;
- }
+.LightButtonStyle {
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	margin: 5px auto;
+	box-shadow: none;
+}
 
- .circle{
-  border: 20px solid #00ffff;
-  border-radius: 50%;
-  height: 180px;
-  width: 180px;
-  padding: 30px 20px 0px 20px;
-  margin-bottom: 30px;
-  text-align: center;
-  margin: 20px auto;
-  }
+.circle {
+	border: 20px solid #00ffff;
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+	padding: 30px 20px 0px 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin: 20px auto;
+}
 
-  .purpleH3{
-    color: #00ffff;
-    margin-bottom: 20px;
-  }
+.purpleH3 {
+	color: #00ffff;
+	margin-bottom: 20px;
+}
 
-  .circle-text{
-    font-size: 0.8rem;
-    width: 60%;
-    display: inline-block;
-  }
+.circle-text {
+	font-size: 0.8rem;
+	width: 60%;
+	display: inline-block;
+}
 
-#aStyle{
-  text-decoration: none;
+#aStyle {
+	text-decoration: none;
 }
