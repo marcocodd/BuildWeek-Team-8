@@ -28,7 +28,11 @@ li {
     color: white;
     margin-bottom: 10px;
 }
-#label {margin-top: 100px;
+#label {
     color: white;
     font-family: 'Inter', 'sans-serif';
+}
+.row {margin-top: 100px;;
+    display: flex;
+    justify-content: space-between;
 }
