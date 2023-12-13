@@ -35,7 +35,7 @@ body {
 .title {
 	font-family: 'Inter', sans-serif;
 	font-size: 50px;
-	color: white;
+	color: #e7e7eb;
 }
 
 .bold {
@@ -44,13 +44,14 @@ body {
 
 .paragraph {
 	font-family: 'Outfit', sans-serif;
-	color: white;
+	color: #e7e7eb;
 	font-size: 16px;
 }
 
 /* ButtonStyles */
 
 .LightButtonStyle {
+	border: none;
 	background-color: #00ffff;
 	color: black;
 	font-family: 'Inter', sans-serif;
