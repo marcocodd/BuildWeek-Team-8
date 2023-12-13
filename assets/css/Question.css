@@ -5,18 +5,38 @@
 main {
 	text-align: center;
 }
-.btn {
-	background-color: rgba(255, 255, 255, 0.186);
+
+/* .btn { 
+	background-color: rgba(255, 255, 255, 0.13);
 	color: white;
-	border-radius: 40px;
 	width: 300px;
 	height: 65px;
 	margin-top: 15px;
 	margin-left: 30px;
-	border-top: solid rgb(255, 255, 255);
+	border-top: solid rgb(255, 255, 255); 
 	border-left: solid rgba(255, 255, 255, 0.186);
 	border-right: solid rgba(255, 255, 255, 0.186);
+	border-radius: 40px;
+
 }
+*/
+
+.btn {
+	background-color: rgba(255, 255, 255, 0.096);
+  color: white;
+  border-radius: 40px;
+  width: 300px;
+  height: 65px;
+  margin-top: 15px;
+  margin-left: 30px;
+   border-top: solid rgba(241, 234, 234, 0.678);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  
+}
+
+
 .bottom {
 	margin-top: 100px;
 	color: white;
@@ -74,4 +94,8 @@ main {
 
 .btn.selected {
 	background-color: #c90090;
+}
+
+.btn:hover{
+	background: linear-gradient(#d20093b7, #c90090);
 }
