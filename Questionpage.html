@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BenchMark</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+    <link rel="stylesheet" href="assets/css/donutChart.css" />
+    <link rel="stylesheet" href="./assets/css/Question.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BenchMark</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/Main.css" />
-  <link rel="stylesheet" href="assets/css/donutChart.css">
-  <link rel="stylesheet" href="./assets/css/Question.css" />
-</head>
+  <body class="pageBackground">
+    <div class="main-wrapper">
+      <header>
+        <img id="logo" src="assets/img/epicode_logo.png" alt="logo" />
 
-<body class="pageBackground">
-  <div class="main-wrapper">
-    <header>
-
-      <img id="logo" src="assets/img/epicode_logo.png" alt="logo" />
-
-      <div id="timerDonut" class="chart" style="--perc:0; --radius: 50; --strokeWidth: 15;">
-        <svg>
-          <circle class="bg" cx="50%" cy="50%"></circle>
-          <circle class="progress" cx="50%" cy="50%"></circle>
-        </svg>
-        <!-- <div class="percentage">10%</div> -->
-        <div class="percentage">
-          <div class="text" id="TimerText"></div>
+        <div
+          id="timerDonut"
+          class="chart"
+          style="--perc: 0; --radius: 50; --strokeWidth: 15"
+        >
+          <svg>
+            <circle class="bg" cx="50%" cy="50%"></circle>
+            <circle class="progress" cx="50%" cy="50%"></circle>
+          </svg>
+          <!-- <div class="percentage">10%</div> -->
+          <div class="percentage">
+            <div class="text" id="TimerText"></div>
+          </div>
         </div>
-      </div>
-
-
-    </header>
-    <main>
-      <h1 class="title" id="questionTitle">
-      </h1>
-      <div id="questions-wrapper">
-      </div>
-      <div class="bottom">question <span id="currentQuestionionNumber"></span>/<span id="totalQuestionionNumber"></span>
-      </div>
-    </main>
-  </div>
-  <script src="scripts/questionsArray.js"></script>
-  <script src="scripts/Question.js"></script>
-</body>
-
+      </header>
+      <main>
+        <h1 class="title" id="questionTitle"></h1>
+        <div id="questions-wrapper"></div>
+        <div class="bottom">
+          question <span id="currentQuestionionNumber"></span>/<span
+            id="totalQuestionionNumber"
+            style="color: #d20094"
+          ></span>
+        </div>
+      </main>
+    </div>
+    <script src="scripts/questionsArray.js"></script>
+    <script src="scripts/Question.js"></script>
+  </body>
 </html>
