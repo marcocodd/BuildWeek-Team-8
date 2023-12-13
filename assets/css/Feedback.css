@@ -1,45 +1,24 @@
-body {
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+main{
+  text-align: center;
 }
 
-#logo-epicode {
-    width: 200px;
-    margin-left: 100px;
-    margin-top:50px
+.title{
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 30px;
 }
 
-h1{
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+.secondTitle {
+  font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    color: #e7e7eb;
     text-align: center;
-    font-weight: bold;
-    font-family: sans-serif;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
-#secondTitle {
-    font-size: 30px;
-    color:white;
-    text-align: center;
-}
 
-#thirdTitle {
-    color:white;
-    font-size: 30px;
-    text-align: center;
-}
 
-#inputTesto {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 700px;
-    border-color: transparent;
-    background: transparent;
-    font-size: 20px;
-    border-bottom-color: fuchsia;
-}
 
 #buttonMoreInfo {
     margin-left: auto;
@@ -55,12 +34,19 @@ h1{
 }
 
 
+.rate label{
+  transition: 150ms;
+}
+
 .rate {
-   margin-right: 400px;
    margin-bottom: 100px;
     height: 46px;
-    padding: 0 10px;
-  }
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
   .rate:not(:checked) > input {
    position:absolute;
    top:-9999px;
@@ -72,7 +58,7 @@ h1{
     white-space:nowrap;
     cursor:pointer;
     font-size:70px;
-    color:#ccc;
+    color:#0a0a0ac9;
   }
   .rate:not(:checked) > label:before {
     content: '★ ';
@@ -92,3 +78,40 @@ h1{
     color:aqua;
   }
     
+.rate::after {
+  clear: both;
+}
+
+#textAreaStyle{
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  font-family: 'Outfit', sans-serif;
+  border-bottom: solid 1px #c2128d;
+  margin-bottom: 30px;
+  resize: none;
+  color: #e7e7eb;
+  padding-left: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+
+textarea::placeholder{
+  position: absolute;
+  bottom: 5px;
+  transition-duration: 100ms;
+}
+
+textarea:focus::placeholder{
+  bottom: calc(90% - 15px);
+}
+
+textarea:focus{
+  outline: none;
+}

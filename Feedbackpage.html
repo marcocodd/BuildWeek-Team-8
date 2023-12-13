@@ -4,43 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FeedBack Page</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/Main.css" />
     <link rel="stylesheet" href="./assets/css/Feedback.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <header>
-      <img src="assets/img/epicode_logo.png" alt="logo-epicode" id="logo-epicode">
-    </header>
-    <main>
-      <h1>Tell us how it's going</h1>
-      <p id="secondTitle">From 0 to 10, how likely are you to recomend EPICODE <br> to a friend or a colleague?</p>
-      <div class="rate">
-        <input type="radio" id="star1" name="rate" value="1" />
-        <label for="star1" title="text">1 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" />
-        <label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" />
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" />
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star5" name="rate" value="5" />
-        <label for="star5" title="text">5 star</label>
-        <input type="radio" id="star6" name="rate" value="6" />
-        <label for="star6" title="text">6 star</label>
-        <input type="radio" id="star7" name="rate" value="7" />
-        <label for="star7" title="text">7 star</label>
-        <input type="radio" id="star8" name="rate" value="8" />
-        <label for="star8" title="text">8 star</label>
-        <input type="radio" id="star9" name="rate" value="9" />
-        <label for="star9" title="text">9 star</label>
-        <input type="radio" id="star10" name="rate" value="10" />
-        <label for="star10" title="text">10 star</label>
-      </div>
-      <p id="thirdTitle">Leave us an open feedback about your experience so far</p>
-      <input type="text" id="inputTesto" placeholder="Write your comment here"><br>
-      <button id="buttonMoreInfo">MORE INFO</button>
-    </main>
+  <body class="pageBackground">
+    <div class="main-wrapper">
+      <header>
+        <img
+          id="logo"
+          src="assets/img/epicode_logo.png"
+          alt="logo-epicode"
+          id="logo-epicode"
+        />
+      </header>
+      <main>
+        <h1 class="title bold">Tell us how it's going</h1>
+        <p class="secondTitle">
+          From 0 to 10, how likely are you to recomend EPICODE <br />
+          to a friend or a colleague?
+        </p>
+        <div class="rate">
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 star</label>
+          <input type="radio" id="star6" name="rate" value="6" />
+          <label for="star6" title="text">6 star</label>
+          <input type="radio" id="star7" name="rate" value="7" />
+          <label for="star7" title="text">7 star</label>
+          <input type="radio" id="star8" name="rate" value="8" />
+          <label for="star8" title="text">8 star</label>
+          <input type="radio" id="star9" name="rate" value="9" />
+          <label for="star9" title="text">9 star</label>
+          <input type="radio" id="star10" name="rate" value="10" />
+          <label for="star10" title="text">10 star</label>
+        </div>
+        <p class="secondTitle">
+          Leave us an open feedback about your experience so far
+        </p>
+        <textarea
+          id="textAreaStyle"
+          placeholder="Write your comment here"
+        ></textarea>
+        <button class="LightButtonStyle">MORE INFO</button>
+      </main>
+    </div>
     <script src="/scripts/Feedback.js"></script>
   </body>
 </html>
