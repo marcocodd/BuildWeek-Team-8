@@ -1,0 +1,47 @@
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg);
+}
+
+.bg {
+	fill: none;
+	stroke: rgb(0, 0, 0 /74);
+	stroke-dasharray: calc(var(--radius) * pi * 2);
+}
+
+.progress {
+	fill: none;
+	stroke: #c2128d;
+	stroke-dasharray: 0, calc(var(--radius) * pi * 2);
+	transition-duration: 1s;
+	// transition: stroke-dasharray 1s ease;
+}
+
+.percentage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.chart {
+	position: relative;
+	width: calc(var(--radius) * 2px + var(--strokeWidth) * 1px);
+	height: calc(var(--radius) * 2px + var(--strokeWidth) * 1px);
+	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.614));
+
+	circle {
+		r: var(--radius);
+		stroke-width: var(--strokeWidth);
+	}
+
+	.progress {
+		stroke-dasharray: calc((var(--radius) * pi * 2) * var(--perc)), calc(var(--radius) * pi * 2);
+	}
+}
