@@ -18,8 +18,8 @@ svg {
   fill: none;
   stroke: #c2128d;
   stroke-dasharray: 0, calc(var(--radius) * 3.1415926536 * 2);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 .percentage {

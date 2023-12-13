@@ -1,5 +1,3 @@
-// import { questions } from './questionsArray.js'
-// console.log(questions)
 let questions = []
 const questionsWrapper = document.getElementById('questions-wrapper')
 const questionTitle = document.getElementById('questionTitle')
@@ -20,7 +18,6 @@ const getQuestions = async () => {
 	return fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=medium')
 		.then(response => response.json())
 		.then(data => {
-			console.log(data)
 			if (data.response_code === 0) {
 				return data.results
 			}
@@ -28,9 +25,10 @@ const getQuestions = async () => {
 		.catch(err => null)
 }
 
+//start the questionary getting the questions from the API
+// and then starting the timer
 const start = async () => {
 	questions = await getQuestions()
-	console.log('')
 	startTimer()
 	showQuestion()
 }
@@ -77,12 +75,13 @@ const showQuestion = () => {
 }
 
 const startTimer = async () => {
-	console.log('questions', questions)
 	currentQuestionionNumber.innerText = questionIndex + 1
 	intervalID = setInterval(() => {
 		timer--
 		TimerText.innerText = timer
 		timerDonut.style.setProperty('--perc', timer / defaultTimer)
+
+		//wait the timer transition
 		timerDonut.addEventListener('transitionend', nextAnswer)
 	}, 1000)
 }
@@ -122,7 +121,6 @@ const nextAnswer = () => {
 const stopTimer = () => {
 	clearInterval(intervalID)
 	intervalID = null
-	console.log('end timer')
 }
 
 //verify if the answer is correct
