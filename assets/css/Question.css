@@ -29,6 +29,7 @@ main {
 	border-right: none;
 	border-bottom: none;
 	border-top:solid 2px rgba(221, 217, 217, 0.726);
+	cursor: pointer;
 }
 
 
@@ -90,6 +91,7 @@ main {
 
 .btn:hover, .btn.selected{
 	background: linear-gradient(-180deg, #9e0470 40%, #c90090 100%);
+	
 }
 
 
