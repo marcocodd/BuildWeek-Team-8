@@ -12,7 +12,7 @@ checkBox.addEventListener('change', function () {
 })
 proceedButton.addEventListener('click', function () {
 	if (checkBox.checked) {
-		Window.location.href = 'Questionpage.html'
+		window.location.href = 'Questionpage.html'
 	} else {
 		alert('per procedere devi aver accettato i termini e le condizioni')
 	}
