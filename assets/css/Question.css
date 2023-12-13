@@ -1,13 +1,15 @@
-/* body {
-	width: auto;
-	height: auto;
-} */
+*,
+.percentage #TimerText {
+	font-family: 'Outfit', sans-serif;
+}
+
 main {
 	text-align: center;
 }
-
-/* .btn { 
-	background-color: rgba(255, 255, 255, 0.13);
+.btn {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	background-color: rgba(255, 255, 255, 0.186);
 	color: white;
 	width: 300px;
 	height: 65px;
@@ -41,13 +43,15 @@ main {
 	margin-top: 100px;
 	color: white;
 }
-#logo {
+/* #logo {
 	margin-top: 35px;
 	margin-left: 70px;
-}
+} */
 
 .title {
 	margin-top: 150px;
+	margin-bottom: 3rem;
+	font-size: 2.5rem;
 }
 .circular-timer {
 	width: 85px;
@@ -78,13 +82,9 @@ main {
 
 .text {
 	text-align: center;
-
 	line-height: 85px;
 	font-size: 20px;
 	color: #333;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 #TimerText {
@@ -96,6 +96,11 @@ main {
 	background-color: #c90090;
 }
 
-.btn:hover{
-	background: linear-gradient(#d20093b7, #c90090);
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress {
+	stroke: #00ffff;
 }
