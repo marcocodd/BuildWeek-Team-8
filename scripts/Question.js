@@ -1,5 +1,5 @@
 // import { questions } from './questionsArray.js'
-console.log(questions)
+// console.log(questions)
 const questionsWrapper = document.getElementById('questions-wrapper')
 const questionTitle = document.getElementById('questionTitle')
 const currentQuestionionNumber = document.getElementById('currentQuestionionNumber')
