@@ -10,7 +10,7 @@ const TimerText = document.getElementById("TimerText");
 const timerDonut = document.getElementById("timerDonut");
 
 let questionIndex = 0;
-const defaultTimer = 5;
+const defaultTimer = 30;
 let timer = defaultTimer;
 let intervalID = null;
 let answer = "";
