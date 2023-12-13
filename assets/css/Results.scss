@@ -26,13 +26,19 @@ body {
 
 .row {
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 2rem;
 }
-.row .col-one-third {
-	width: 33.333%;
+.row .col {
+	/* width: 33.333%; */
 	text-align: center;
 }
 
 .flex-col {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -49,10 +55,12 @@ body {
 .circle {
 	border: 20px solid #00ffff;
 	border-radius: 50%;
-	border-top: 20px solid #d20094;
 	height: 180px;
+	width: 180px;
 	padding: 30px 20px 0px 20px;
 	margin-bottom: 30px;
+	text-align: center;
+	margin: 20px auto;
 }
 
 .purpleH3 {
@@ -60,6 +68,26 @@ body {
 	margin-bottom: 20px;
 }
 
-.divCircleText {
+.circle-text {
 	font-size: 0.8rem;
+	width: 60%;
+	display: inline-block;
+}
+
+#aStyle {
+	text-decoration: none;
+}
+
+.progress {
+	stroke: #00ffff;
+	transition-duration: 2500ms;
+	transition-timing-function: cubic-bezier(0.39, 0.58, 0.4, 0.97);
+}
+
+.bg {
+	stroke: #c2128d;
+}
+
+.perc {
+	width: 105px;
 }

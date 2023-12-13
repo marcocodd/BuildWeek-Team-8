@@ -5,9 +5,10 @@ const questionTitle = document.getElementById('questionTitle')
 const currentQuestionionNumber = document.getElementById('currentQuestionionNumber')
 document.getElementById('totalQuestionionNumber').innerText = questions.length
 const TimerText = document.getElementById('TimerText')
+const timerDonut = document.getElementById('timerDonut')
 
 let questionIndex = 0
-const defaultTimer = 10
+const defaultTimer = 5
 let timer = defaultTimer
 let intervalID = null
 let answer = ''
@@ -36,7 +37,7 @@ const showQuestion = () => {
 	let answers = question.incorrect_answers
 	answers.push(question.correct_answer)
 	answers = shuffle(answers)
-	console.log(answers)
+	// console.log(answers)
 	for (let i = 0; i < answers.length; i++) {
 		const button = document.createElement('button')
 		button.innerHTML = answers[i]
@@ -45,7 +46,6 @@ const showQuestion = () => {
 			answer = button.innerText
 			button.classList.add('selected')
 			const buttons = document.getElementsByClassName('btn')
-			console.log(buttons)
 			for (let i = 0; i < buttons.length; i++) {
 				if (buttons[i].innerText !== answer) {
 					buttons[i].classList.remove('selected')
@@ -61,29 +61,45 @@ const startTimer = () => {
 	intervalID = setInterval(() => {
 		timer--
 		TimerText.innerText = timer
+		timerDonut.style.setProperty('--perc', timer / defaultTimer)
 		if (timer === 0) {
-			verifyAnswer()
 			nextAnswer()
-		}
-		if (questionIndex === questions.length - 1) {
-			stopTimer()
-			localStorage.setItem('score', correctAnswers + '-' + questions.length)
-			// window.location.href = window.location.origin + '/Resultspage.html'
 		}
 	}, 1000)
 }
 
+// go to next question if the current index is less than the length of the questions array - 1
 const nextAnswer = () => {
-	timer = defaultTimer
-	answer = ''
-	questionIndex++
-	questionsWrapper.innerHTML = ''
-	currentQuestionionNumber.innerText = questionIndex + 1
-	showQuestion()
+	if (questionIndex <= questions.length - 1) {
+		verifyAnswer()
+		timer = defaultTimer
+		answer = ''
+		questionsWrapper.innerHTML = ''
+
+		// if the current index is 0, then we need to increment it by 1
+		// to pass to the next question
+		if (questionIndex === 0) {
+			questionIndex++
+		}
+		currentQuestionionNumber.innerText = questionIndex + 1
+		showQuestion()
+
+		// if the current index is not 0, then we need to increment it by 1
+		if (questionIndex > 0) {
+			questionIndex++
+		}
+	} else {
+		//stop the time the current index is more than the length of the questions array - 1
+		stopTimer()
+		localStorage.setItem('score', correctAnswers + '-' + questions.length)
+		// window.location.href = window.location.origin + '/Resultspage.html'
+		return
+	}
 }
 const stopTimer = () => {
 	clearInterval(intervalID)
 	intervalID = null
+	console.log('end timer')
 }
 
 //verify if the answer is correct
@@ -95,4 +111,3 @@ const verifyAnswer = () => {
 
 startTimer()
 showQuestion()
-console.log(window.location)
