@@ -25,12 +25,13 @@ body {
 }
 
 .row {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 2rem;
 }
-.row .col-one-third {
-	width: 33.333%;
+.row .col {
+	/* width: 33.333%; */
 	text-align: center;
 }
 
@@ -75,4 +76,22 @@ body {
 
 #aStyle {
 	text-decoration: none;
+}
+
+svg {
+	transform: rotate(-90deg) scaleY(-1);
+}
+
+.progress {
+	stroke: #00ffff;
+	transition-duration: 2500ms;
+	transition-timing-function: cubic-bezier(0.39, 0.58, 0.4, 0.97);
+}
+
+.bg {
+	stroke: #c2128d;
+}
+
+.perc {
+	width: 105px;
 }
