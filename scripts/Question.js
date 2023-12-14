@@ -21,7 +21,7 @@ const results = {
 }
 
 const getQuestions = async (amount, difficulty) => {
-	return fetch(`https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=${difficulty}`)
+	return fetch(`https://opentdb.com/api.php?amount=${amount=10}&category=18&difficulty=${difficulty='easy'}`)
 		.then(response => response.json())
 		.then(data => {
 			if (data.response_code === 0) {
@@ -45,7 +45,7 @@ const start = async () => {
 	 * }
 	 */
 
-	const storedSettings = localStorage.getItem('epicode-benchmark-setting').json()
+	// const storedSettings = localStorage.getItem('epicode-benchmark-setting').json()
 
 	questions = await getQuestions()
 	startTimer()
@@ -107,6 +107,7 @@ const startTimer = async () => {
 
 // go to next question if the current index is less than the length of the questions array - 1
 const nextAnswer = () => {
+	console.log('funzionooooo', questionIndex)
 	if (questionIndex <= questions.length - 1) {
 		if (timer === 0) {
 			verifyAnswer()
@@ -151,3 +152,10 @@ const verifyAnswer = () => {
 }
 
 start()
+
+const nextButton = document.getElementById('nextButton');
+console.log(nextButton)
+nextButton.addEventListener('click', function(){
+	timer= 0 
+	nextAnswer()
+} );
