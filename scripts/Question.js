@@ -27,7 +27,7 @@ const detailsResults = {
 	given_answer: '',
 }
 
-const getQuestions = async (amount = 2, difficulty = 'easy') => {
+const getQuestions = async (amount = 10, difficulty = 'easy') => {
 	return fetch(`https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=${difficulty}`)
 		.then(response => response.json())
 		.then(data => {
@@ -169,5 +169,11 @@ const verifyAnswer = () => {
 	console.log(results.details)
 	results.details[questionIndex].given_answer = answer
 }
+const nextButton = document.getElementById('nextButton')
+console.log(nextButton)
+nextButton.addEventListener('click', function () {
+	timer = 0
+	nextAnswer()
+})
 
 start()
