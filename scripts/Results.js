@@ -4,15 +4,17 @@ window.addEventListener('load', () => {
 	const correctNumber = document.getElementById('correctNumber')
 	const wrongNumber = document.getElementById('wrongNumber')
 	const totalQuestions = document.getElementsByClassName('totalQuestions')
-	const answers = localStorage.getItem('score').split('-')
+	const results = JSON.parse(localStorage.getItem('results'))
+	console.log(results)
+	const correctAnswers = results.correctAnswers
+	const wrongAnswers = results.wrongAnswers
+	const total_questions = results.total_questions
+	const correctPercNumberTarget = Math.floor((correctAnswers / total_questions) * 100)
+	const wrongPercNumberTarget = Math.floor((wrongAnswers / total_questions) * 100)
 
-	const correctTarget = answers[0]
-	const totalTarget = answers[1]
-	const correctPercNumberTarget = Math.floor((correctTarget / totalTarget) * 100)
-	const wrongPercNumberTarget = Math.floor(((totalTarget - correctTarget) / totalTarget) * 100)
-
+	//apply the numeber of total questions for each totalQuestions HTML element
 	for (let i = 0; i < totalQuestions.length; i++) {
-		totalQuestions[i].innerText = totalTarget
+		totalQuestions[i].innerText = total_questions
 	}
 
 	const incrementEffect = (element, targetNumber, duration) => {
@@ -39,10 +41,44 @@ window.addEventListener('load', () => {
 	//wrong answers percentage
 	incrementEffect(wrongPerc, wrongPercNumberTarget, 2500)
 
-	incrementEffect(correctNumber, correctTarget, 2500)
-	incrementEffect(wrongNumber, totalTarget - correctTarget, 2500)
+	incrementEffect(correctNumber, correctAnswers, 2500)
+	incrementEffect(wrongNumber, wrongAnswers, 2500)
 
 	document
 		.getElementsByClassName('chart')[0]
 		.style.setProperty('--perc', correctPercNumberTarget / 100)
+
+	const detailsMainWarapper = document.getElementById('details')
+	const iconList = [
+		'fa-regular fa-circle',
+		'fa-regular fa-circle-dot',
+		' fa-solid fa-xmark',
+		'fa-solid fa-check',
+	]
+	const details = results.details
+	details.forEach((detail, index) => {
+		const detailWrapper = document.createElement('div')
+		detailWrapper.classList.add('detail-wrapper')
+		const detailTitle = document.createElement('h3')
+		let headerIcon = detail.given_answer === detail.correct_answer ? iconList[3] : iconList[2]
+		detailTitle.innerHTML = `(${index + 1}) <i class="${headerIcon}"></i> ${detail.question}`
+		detailWrapper.appendChild(detailTitle)
+		detailsMainWarapper.appendChild(detailWrapper)
+		const questionsUl = document.createElement('ul')
+		questionsUl.classList.add('questions-ul')
+		detail.answers.forEach(answer => {
+			const li = document.createElement('li')
+			const icon1 = answer === detail.given_answer ? iconList[1] : iconList[0]
+			let icon2 =
+				answer === detail.correct_answer
+					? iconList[3]
+					: answer === detail.given_answer
+					? iconList[2]
+					: ''
+			icon2 = icon2 ? `<i class="${icon2}"></i>` : ''
+			li.innerHTML = `<i class="${icon1}"></i> ${answer} ${icon2}`
+			questionsUl.appendChild(li)
+		})
+		detailWrapper.appendChild(questionsUl)
+	})
 })
