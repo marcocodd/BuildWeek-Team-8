@@ -159,7 +159,7 @@ const nextAnswer = () => {
   } else {
     //stop the time the current index is more than the length of the questions array - 1
     stopTimer();
-    localStorage.setItem("result", correctAnswers + "-" + questions.length);
+    localStorage.setItem("results", JSON.stringify(results));
     if (autoRedirect) {
       window.location.href = window.location.origin + "/Resultspage.html";
     }
