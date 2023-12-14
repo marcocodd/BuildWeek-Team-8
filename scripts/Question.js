@@ -20,8 +20,8 @@ const results = {
 	details: [],
 }
 
-const getQuestions = async () => {
-	return fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=medium')
+const getQuestions = async (amount, difficulty) => {
+	return fetch(`https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=${difficulty}`)
 		.then(response => response.json())
 		.then(data => {
 			if (data.response_code === 0) {
@@ -34,6 +34,19 @@ const getQuestions = async () => {
 //start the questionary getting the questions from the API
 // and then starting the timer
 const start = async () => {
+	/**
+	 *
+	 * Recuperare i dati da local Storage con chiave epicode-benchmark-setting per i parametri amount e difficulty
+	 * l'oggeto in entrata sarà formato come stringa JSON da convertire in ogggto JS
+	 * struttura aspettata:
+	 * {
+	 * 		amount: numero
+	 * 		difficulty: 'easy' || 'medium'|| 'hard'
+	 * }
+	 */
+
+	const storedSettings = localStorage.getItem('epicode-benchmark-setting').json()
+
 	questions = await getQuestions()
 	startTimer()
 	showQuestion()
@@ -106,6 +119,7 @@ const nextAnswer = () => {
 			if (questionIndex === 0) {
 				questionIndex++
 			}
+
 			currentQuestionionNumber.innerText = questionIndex + 1
 			showQuestion()
 
@@ -117,7 +131,7 @@ const nextAnswer = () => {
 	} else {
 		//stop the time the current index is more than the length of the questions array - 1
 		stopTimer()
-		localStorage.setItem('score', correctAnswers + '-' + questions.length)
+		localStorage.setItem('result', correctAnswers + '-' + questions.length)
 		if (autoRedirect) {
 			window.location.href = window.location.origin + '/Resultspage.html'
 		}
