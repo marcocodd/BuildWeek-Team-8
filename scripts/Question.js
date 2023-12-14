@@ -13,6 +13,12 @@ let intervalID = null
 let answer = ''
 let correctAnswers = 0
 const autoRedirect = false
+const results = {
+	correctAnswers: 0,
+	wrongAnswers: 0,
+	total_questions: 0,
+	details: [],
+}
 
 const getQuestions = async () => {
 	return fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=medium')
