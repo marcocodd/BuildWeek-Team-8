@@ -11,6 +11,7 @@ main {
 #questions-wrapper{
     width: 660px;
     margin: 0 auto;
+	padding-right: 30px;
 
 }
 
@@ -100,4 +101,12 @@ header {
 
 .progress {
 	stroke: #00ffff;
+}
+#totalQuestionionNumber {
+	color: #d20094
+}
+
+#nextButton {
+	margin-top: 50px;
+	text-align: center;
 }
