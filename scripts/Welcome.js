@@ -26,7 +26,7 @@ const selectDifficulty = function() {
     }
 
 	const difficultyObject = {
-        difficulty: difficulty,
+        amount: difficulty,
         numberQuestions: numberQuestions
     }
 
