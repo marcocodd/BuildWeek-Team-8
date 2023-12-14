@@ -106,6 +106,19 @@ header {
 }
 
 #nextButton {
-	margin-top: 50px;
+	border: none;
+	margin-top: 60px;
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	padding: 15px 60px 15px 60px;
 	text-align: center;
+	cursor: pointer;
 }
+
+#nextButton:hover{
+	background: linear-gradient(-180deg, #9e0470 40%, #c90090 100%);
+}
+
