@@ -182,5 +182,11 @@ const verifyAnswer = () => {
   }
   results.details[questionIndex].given_answer = answer;
 };
+const nextButton = document.getElementById('nextButton');
+console.log(nextButton)
+nextButton.addEventListener('click', function(){
+	timer= 0 
+	nextAnswer()
+} );
 
 start();
