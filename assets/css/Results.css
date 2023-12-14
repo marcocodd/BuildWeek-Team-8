@@ -48,12 +48,16 @@
 
 
 .LightButtonStyle {
-  background: transparent;
-  border: solid 2px white;
-  color: white;
-  margin: 5px auto;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  border: none;
+	margin-top: 25px;
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	padding: 15px 60px 15px 60px;
+	text-align: center;
+	cursor: pointer;
 }
 
 .circle {
