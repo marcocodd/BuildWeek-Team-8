@@ -7,8 +7,8 @@ const TimerText = document.getElementById('TimerText')
 const timerDonut = document.getElementById('timerDonut')
 
 let questionIndex = 0
-const defaultTimer = 5
-let timer = defaultTimer + 1
+const defaultTimer = 30
+let timer = defaultTimer
 let intervalID = null
 let answer = ''
 let correctAnswers = 0
@@ -18,13 +18,6 @@ const results = {
 	wrongAnswers: 0,
 	total_questions: 0,
 	details: [],
-}
-
-const detailsResults = {
-	question: '',
-	correct_answer: '',
-	answers: [],
-	given_answer: '',
 }
 
 const getQuestions = async (amount = 10, difficulty = 'easy') => {
@@ -56,7 +49,9 @@ const start = async () => {
 	const questionsSettings = JSON.parse(storedSettings)
 	console.log(questionsSettings)
 
-	questions = await getQuestions()
+	questions = await getQuestions(questionsSettings.amount, questionsSettings.difficulty)
+
+	results.total_questions = questions.length
 	console.log(questions)
 	document.getElementById('totalQuestionionNumber').innerText = questions.length
 	startTimer()
@@ -146,7 +141,7 @@ const nextAnswer = () => {
 			showQuestion()
 		}
 	} else {
-		//stop the time the current index is more than the length of the questions array - 1
+		//stop the time the current index is more than the length of the questions array - 1 and the timer is equal to 0
 		if (timer === 0) {
 			stopTimer()
 			localStorage.setItem('results', JSON.stringify(results))
