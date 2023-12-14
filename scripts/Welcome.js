@@ -23,20 +23,16 @@ const selectDifficulty = function() {
     const numberQuestions = parseInt(document.getElementById("numberQuestions").value);
     if (numberQuestions < 5 || numberQuestions > 30) {
         alert("Number must be between 5 and 30.");
-        return;
     }
-    console.log("Difficulty selected:", difficulty);
-    console.log("Number questions:", numberQuestions);
 
 	const difficultyObject = {
         difficulty: difficulty,
-        numbQuestions: numberQuestions
+        numberQuestions: numberQuestions
     }
 
 	const JSONString = JSON.stringify(difficultyObject);
 
-	localStorage.setItem('testOptions', JSONString);
+	localStorage('epicode-benchmark-setting', JSONString);
 
-	window.location.href = "Welcomepage.html" + "Questionpage.html"
-
+    window.location.href = window.location.origin + "/Questionpage.html"
 }
