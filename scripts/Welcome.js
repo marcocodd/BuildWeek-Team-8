@@ -17,4 +17,3 @@ proceedButton.addEventListener('click', function () {
 		alert('per procedere devi aver accettato i termini e le condizioni')
 	}
 })
-
