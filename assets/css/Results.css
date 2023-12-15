@@ -48,12 +48,16 @@
 
 
 .LightButtonStyle {
-  background: transparent;
-  border: solid 2px white;
-  color: white;
-  margin: 5px auto;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  border: none;
+	margin-top: 25px;
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	padding: 15px 60px 15px 60px;
+	text-align: center;
+	cursor: pointer;
 }
 
 .circle {
@@ -72,8 +76,13 @@
   margin-bottom: 20px;
 }
 
+
+.circle-text > h3{
+  font-size: 1.3rem;
+}
+
 .circle-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   width: 60%;
   display: inline-block;
 }
@@ -97,3 +106,49 @@
 .perc {
   width: 105px;
 }/*# sourceMappingURL=Results.css.map */
+
+
+#details{
+  margin-bottom: 50px;
+  background-color: #0000001f;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 48px 10px rgb(0 0 0 / 50%);
+  
+}
+
+.detail-wrapper{
+  
+  border-top: 1px solid;
+  
+}
+
+.questions-ul {
+  margin: 15px;
+  list-style: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+.questions-ul > li{
+  margin: 10px 0;
+  opacity:0.7
+}
+
+
+div.detail-wrapper > h3{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+}
+
+.fa-solid.fa-check{
+  color: rgb(149, 240, 14);
+ 
+}
+
+.fa-solid.fa-xmark{
+  color: rgb(255, 15, 15);
+}

@@ -5,15 +5,13 @@
 
 main {
 	text-align: center;
-
 }
 
-#questions-wrapper{
-    width: 660px;
-    margin: 0 auto;
+#questions-wrapper {
+	width: 660px;
+	margin: 0 auto;
 	padding-right: 30px;
 }
-
 
 .btn {
 	font-family: 'Inter', sans-serif;
@@ -28,10 +26,9 @@ main {
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
-	border-top:solid 2px rgba(221, 217, 217, 0.726);
+	border-top: solid 2px rgba(221, 217, 217, 0.726);
+	cursor: pointer;
 }
-
-
 
 .bottom {
 	margin-top: 100px;
@@ -86,12 +83,10 @@ main {
 	color: #fff;
 }
 
-
-
-.btn:hover, .btn.selected{
-	background: linear-gradient(-180deg, #9e0470 40%, #c90090 100%);
+.btn:hover,
+.btn.selected {
+	background: linear-gradient(0deg, #9e0470 40%, #c90090 100%);
 }
-
 
 header {
 	display: flex;
@@ -102,10 +97,23 @@ header {
 	stroke: #00ffff;
 }
 #totalQuestionionNumber {
-	color: #d20094
+	color: #d20094;
 }
 
 #nextButton {
-	margin-top: 50px;
+	border: none;
+	margin-top: 60px;
+	background: transparent;
+	border: solid 2px white;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	padding: 15px 60px 15px 60px;
 	text-align: center;
+	cursor: pointer;
 }
+
+#nextButton:hover{
+	background: linear-gradient(-180deg, #9e0470 40%, #c90090 100%);
+}
+
