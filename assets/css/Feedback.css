@@ -1,100 +1,110 @@
-
-main{
-  text-align: center;
+main {
+	text-align: center;
+	margin-top: 5rem;
 }
 
-.title{
-  font-family: 'Outfit', sans-serif;
-  margin-bottom: 30px;
+.title {
+	font-family: 'Outfit', sans-serif;
+	margin-bottom: 30px;
 }
 
 .secondTitle {
-  font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    color: #e7e7eb;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 30px;
+	font-family: 'Inter', sans-serif;
+	font-size: 25px;
+	color: #e7e7eb;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 30px;
 }
 
-.rate label{
-  transition: 150ms;
+.rate label {
+	transition: 150ms;
 }
 
 .rate {
-   margin-bottom: 100px;
-    height: 46px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-
-
+	margin-bottom: 100px;
+	height: 46px;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
 }
-  .rate:not(:checked) > input {
-   position:absolute;
-   top:-9999px;
-  }
-  .rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:70px;
-    color:#0a0a0ac9;
-  }
-  .rate:not(:checked) > label:before {
-    content: '★ ';
-  }
-  .rate > input:checked ~ label {
-    color: aqua;
-  }
-  .rate:not(:checked) > label:hover,
-  .rate:not(:checked) > label:hover ~ label {
-    color: aqua;
-  }
-  .rate > input:checked + label:hover,
-  .rate > input:checked + label:hover ~ label,
-  .rate > input:checked ~ label:hover,
-  .rate > input:checked ~ label:hover ~ label,
-  .rate > label:hover ~ input:checked ~ label {
-    color:aqua;
-  }
-    
+.rate:not(:checked) > input {
+	position: absolute;
+	top: -9999px;
+}
+.rate:not(:checked) > label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 70px;
+	color: #0a0a0ac9;
+}
+.rate:not(:checked) > label:before {
+	content: '★ ';
+}
+.rate > input:checked ~ label {
+	color: aqua;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+	color: aqua;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+	color: aqua;
+}
+
 .rate::after {
-  clear: both;
+	clear: both;
 }
 
-#textAreaStyle{
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  background-color: transparent;
-  border: none;
-  margin-top: 20px;
-  font-family: 'Outfit', sans-serif;
-  border-bottom: solid 1px #c2128d;
-  margin-bottom: 30px;
-  resize: none;
-  color: #e7e7eb;
-  padding-left: 20px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
+#textAreaStyle {
+	display: block;
+	width: 100%;
+	max-width: 700px;
+	background-color: transparent;
+	border: none;
+	margin-top: 20px;
+	font-family: 'Outfit', sans-serif;
+	border-bottom: solid 1px #c2128d;
+	margin-bottom: 30px;
+	resize: none;
+	color: #e7e7eb;
+	padding-left: 20px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
 }
 
-
-textarea::placeholder{
-  position: absolute;
-  bottom: 5px;
-  transition-duration: 100ms;
+textarea::placeholder {
+	position: absolute;
+	bottom: 5px;
+	transition-duration: 100ms;
 }
 
-textarea:focus::placeholder{
-  bottom: calc(90% - 15px);
+textarea:focus::placeholder {
+	bottom: calc(90% - 15px);
 }
 
-textarea:focus{
-  outline: none;
+textarea:focus {
+	outline: none;
+}
+
+.LightButtonStyle {
+	border: none;
+	margin-top: 25px;
+	font-weight: 700;
+	padding: 15px 60px;
+	transition-duration: 0.3s;
+	font-size: 1rem;
+}
+
+.LightButtonStyle:hover {
+	box-shadow: 0px 0px 30px 4px rgba(0, 255, 255, 1);
 }
