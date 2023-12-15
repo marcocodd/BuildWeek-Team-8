@@ -130,7 +130,6 @@ const nextAnswer = () => {
 		// console.table({ timer, timer0: timer === 0, questionIndex, length: questions.length })
 		if (timer === 0) {
 			verifyAnswer()
-			console.log(questionIndex)
 			answer = ''
 			questionsWrapper.innerHTML = ''
 			timer = defaultTimer
@@ -143,6 +142,7 @@ const nextAnswer = () => {
 	} else {
 		//stop the time the current index is more than the length of the questions array - 1 and the timer is equal to 0
 		if (timer === 0) {
+			verifyAnswer()
 			stopTimer()
 			localStorage.setItem('results', JSON.stringify(results))
 			if (autoRedirect) {
@@ -155,6 +155,8 @@ const nextAnswer = () => {
 
 //verify if the answer is correct
 const verifyAnswer = () => {
+	console.log(questionIndex)
+
 	answer = answer ? answer : ''
 	if (answer === questions[questionIndex].correct_answer) {
 		results.correctAnswers++
