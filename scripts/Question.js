@@ -12,7 +12,7 @@ let timer = defaultTimer
 let intervalID = null
 let answer = ''
 let correctAnswers = 0
-const autoRedirect = false
+const autoRedirect = true
 const results = {
 	correctAnswers: 0,
 	wrongAnswers: 0,
