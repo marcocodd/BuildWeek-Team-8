@@ -71,6 +71,11 @@ input {
 	border-top: solid 2px rgba(221, 217, 217, 0.726);
 }
 
+input[type='number'], select{
+	width: 83px;
+	padding-left: 5px;
+}
+
 .LightButtonStyle {
 	font-size: 1.38rem;
 	padding: 15px 54px;
@@ -89,7 +94,7 @@ select {
     cursor: pointer;
     color: white;
     margin-left: 19px;
-    width: 60px;
+   
     font-family: 'Inter', 'sans-serif';
 	border: solid 1px white;
 }
@@ -161,3 +166,4 @@ select {
 form p {
 	margin-bottom: 20px;
 }
+
