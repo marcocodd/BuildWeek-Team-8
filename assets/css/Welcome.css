@@ -1,31 +1,42 @@
-/* Imported fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.title {
+	font-size: 60px;
+	margin-bottom: 50px;
+}
 
-body {
-	background-image: url(/assets/img/bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
+strong {
+	font-weight: 700;
+}
+
+main {
+	margin-top: 100px;
 }
 
 h3 {
-	font-family: 'Inter', 'sans-serif';
+	font-family: 'Outfit', sans-serif;
 	color: #d20094;
-	font-size: larger;
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
 p {
-	font-family: 'Inter', 'sans-serif';
+	font-family: 'Inter', sans-serif;
 	color: white;
 	max-width: 70%;
 	margin-bottom: 40px;
+	line-height: 1.5em;
 }
+
+ul {
+	margin-left: 1rem;
+}
+
 li {
-	font-family: 'Inter', 'sans-serif';
+	font-family: 'Inter', sans-serif;
 	color: white;
 	margin-bottom: 10px;
 }
+
 #label {
 	color: white;
 	font-family: 'Inter', 'sans-serif';
@@ -40,20 +51,33 @@ li {
 	opacity: 0.5;
 }
 
-form { font-family: 'Inter', 'sans-serif';
+form {
+	font-family: 'Inter', 'sans-serif';
 	color: white;
 	max-width: 70%;
 	margin-bottom: 60px;
 }
 
-input {font-family: 'Inter', sans-serif;
+input {
+	font-family: 'Inter', sans-serif;
 	color: white;
-	background-color:  rgba(255, 255, 255, 0.13);
+	background-color: rgba(255, 255, 255, 0.13);
 	margin-top: 15px;
-	margin-left: 30px;
 	border-radius: 40px;
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
-	border-top:solid 2px rgba(221, 217, 217, 0.726);
+	border-top: solid 2px rgba(221, 217, 217, 0.726);
+}
+
+.LightButtonStyle {
+	font-size: 1.38rem;
+	padding: 15px 54px;
+}
+
+.input-group {
+}
+
+.flex-bottom {
+	align-items: flex-end;
 }

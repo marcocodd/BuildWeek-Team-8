@@ -34,7 +34,7 @@ body {
 /* Text styles */
 
 .title {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Outfit', sans-serif;
 	font-size: 50px;
 	color: #e7e7eb;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .paragraph {
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Inter', sans-serif;
 	color: #e7e7eb;
 	font-size: 16px;
 }
@@ -59,10 +59,8 @@ body {
 	font-weight: 700;
 	padding: 10px 35px 10px 35px;
 	text-align: center;
-	-webkit-box-shadow: 0px 0px 15px 3px rgba(0, 255, 255, 0.31);
-	-moz-box-shadow: 0px 0px 15px 3px rgba(0, 255, 255, 0.31);
-	box-shadow: 0px 0px 15px 3px rgba(0, 255, 255, 0.31);
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(0, 255, 255, 1);
+	-moz-box-shadow: 0px 0px 23px 0px rgba(0, 255, 255, 1);
+	box-shadow: 0px 0px 23px 0px rgba(0, 255, 255, 1);
 	cursor: pointer;
 }
-
-
