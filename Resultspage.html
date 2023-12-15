@@ -12,9 +12,11 @@
   <link rel="stylesheet" href="./assets/css/Main.css" />
   <link rel="stylesheet" href="./assets/css/donutChart.css" />
   <link rel="stylesheet" href="./assets/css/Results.css" />
+  <link rel="stylesheet" href="assets/css/confetti.css">
 </head>
 
 <body class="pageBackground">
+  <div id="confettis"></div>
   <div class="main-wrapper">
     <header>
       <img src="assets/img/epicode_logo.png" alt="Epidode logo" id="logo" />
@@ -41,12 +43,6 @@
               </svg>
               <!-- <div class="percentage">10%</div> -->
               <div class="circle-text percentage">
-                <h3 class="bold">Congratulations!</h3>
-                <h3 class="purpleH3 bold">You passed the exam.</h3>
-                <span>
-                  We'll send you the certificate in few minutes. Check your
-                  email (including promotions / spam folder)
-                </span>
               </div>
             </div>
           </div>
@@ -69,6 +65,7 @@
       </section>
     </main>
   </div>
+  <script src="scripts/confetti.js"></script>
   <script src="scripts/Results.js"></script>
 </body>
 

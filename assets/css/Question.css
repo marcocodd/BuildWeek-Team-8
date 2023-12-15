@@ -102,7 +102,7 @@ header {
 
 #nextButton {
 	border: none;
-	margin-top: 60px;
+
 	background: transparent;
 	border: solid 2px white;
 	color: white;
@@ -113,7 +113,12 @@ header {
 	cursor: pointer;
 }
 
-#nextButton:hover{
+#nextButton:hover {
 	background: linear-gradient(-180deg, #9e0470 40%, #c90090 100%);
 }
 
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
