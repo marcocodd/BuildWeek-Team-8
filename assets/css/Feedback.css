@@ -103,6 +103,8 @@ textarea:focus {
 	padding: 15px 60px;
 	transition-duration: 0.3s;
 	font-size: 1rem;
+	text-decoration: none;
+	display: inline-block;
 }
 
 .LightButtonStyle:hover {
