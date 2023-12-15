@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+    <link rel="stylesheet" href="./assets/css/Welcome.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/Main.css" />
-  <link rel="stylesheet" href="./assets/css/Welcome.css" />
-</head>
+  <body class="pageBackground">
+    <div class="main-wrapper">
+      <header>
+        <div>
+          <img id="logo" src="assets/img/epicode_logo.png" alt="logo" />
+        </div>
+      </header>
+      <main>
+        <div>
+          <h1 class="title">Welcome to<br /><strong>your exam</strong></h1>
+        </div>
+        <div>
+          <h3>Instructions</h3>
+          <p class="paragraph">
+            We don't expect most engineers to know the answers to all of these
+            questions, so don't worry if you're unsure of a few of them
+          </p>
+          <ul>
+            <li>
+              Each question is <strong>timed </strong> and can only be
+              <strong>answered once</strong>
+            </li>
+            <li>
+              Changing browser tab or opening other windows will
+              <strong> invalidate the question. </strong>
+            </li>
+            <li>This exam will take approx. <strong>0-5 min. </strong></li>
+          </ul>
+        </div>
 
-<body class="pageBackground">
-  <div class="main-wrapper">
-    <header>
-      <div>
-        <img id="logo" src="assets/img/epicode_logo.png" alt="logo" />
-      </div>
-    </header>
-    <main>
-      <div>
-        <h1 class="title">Welcome to<br /><strong>your exam</strong></h1>
-      </div>
-      <div>
-        <h3>Instructions</h3>
-        <p class="paragraph">
-          We don't expect most engineers to know the answers to all of these
-          questions, so don't worry if you're unsure of a few of them
-        </p>
-        <ul>
-          <li>
-            Each question is <strong>timed </strong> and can only be
-            <strong>answered once</strong>
-          </li>
-          <li>
-            Changing browser tab or opening other windows will
-            <strong> invalidate the question. </strong>
-          </li>
-          <li>This exam will take approx. <strong>0-5 min. </strong></li>
-        </ul>
-      </div>
+        <div class="row flex-bottom">
+          <div class="input-group">
+            <form action="">
+              Select the difficulty
+              <select id="difficulty">
+                <option value="easy">easy</option>
+                <option value="medium">medium</option>
+                <option value="hard">hard</option>
+              </select>
+              <p>How many questions?</p>
+              <input
+                type="number"
+                id="numberOfQuestions"
+                value="10"
+                min="5"
+                max="30"
+              />
+            </form>
+            <div id="label">
+              <input class="css-checkbox" type="checkbox" name="" id="accept" />
+              <label for="accept">
+                I promise to answer myself without help from anyone</label
+              >
+            </div>
+          </div>
 
-
-      <div class="row flex-bottom">
-        <div class="input-group">
-          <form> Select the difficulty
-            <select id="difficulty">
-              <option value="easy">easy</option>
-              <option value="medium">medium</option>
-              <option value="hard">hard</option>
-            </select>
-            How many questions?
-            <input type="number" id="numberOfQuestions" value="10" min="5" max="30">
-          </form>
-          <div id="label">
-            <input type="checkbox" name="" id="accept" />
-            <label for="accept">
-              I promise to answer myself without help from anyone</label>
+          <div>
+            <button
+              oneclick="window.location.href='Questionpage.html'"
+              class="LightButtonStyle"
+              id="proceed-button"
+              disabled
+            >
+              PROCEED
+            </button>
           </div>
         </div>
-
-        <div>
-          <button class="LightButtonStyle" id="proceed-button" disabled>
-            PROCEED
-          </button>
-        </div>
-      </div>
-    </main>
-  </div>
-  <script src="scripts/Welcome.js"></script>
-</body>
-
+      </main>
+    </div>
+    <script src="scripts/Welcome.js"></script>
+  </body>
 </html>
