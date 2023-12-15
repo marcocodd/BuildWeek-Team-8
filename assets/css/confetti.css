@@ -1,8 +1,7 @@
 #confettis {
 	position: absolute;
 	width: 100%;
-	height: 400px;
-	overflow: hidden;
+	height: 500px;
 }
 
 .confetti {
