@@ -1,0 +1,27 @@
+#confettis {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+.confetti {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 2px; /* Leggera arrotondatura degli angoli */
+	transform-style: preserve-3d;
+}
+
+@keyframes fall {
+	0% {
+		top: -10%;
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		opacity: 1;
+	}
+	100% {
+		top: 100%;
+		transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+		opacity: 0;
+	}
+}

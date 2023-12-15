@@ -2,10 +2,16 @@
 	color: #fff;
 }
 
+body {
+	position: relative;
+}
+
 .main-wrapper {
 	margin: 0 auto;
 	max-width: 1000px;
 	padding-top: 2rem;
+	position: relative;
+	z-index: -1;
 }
 
 .title-wrapper {
